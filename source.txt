@@ -84,4 +84,4 @@ Manuel	Stanney
 <strong>Done</strong>
 <a href="https://mockdata.atlassian.net/browse/ABC-1005"><code>ABC-1005</code></a> In ultrices lobortis mauris in interdum.
 <a href="https://mockdata.atlassian.net/browse/ABC-976"><code>ABC-976</code></a> Mauris imperdiet non lorem eget congue.
-<a href="https://mockdata.atlassian.net/browse/ABC-12408"><code>ABC-12408</code></a> Nullam tincidunt vulputate nibh a placerat..
+<a href="https://mockdata.atlassian.net/browse/ABC-12408"><code>ABC-12408</code></a> Nullam tincidunt vulputate nibh a placerat.
