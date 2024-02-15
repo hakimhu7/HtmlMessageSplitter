@@ -1,31 +1,41 @@
-
 # HTML Message Splitter
 
-The HTML Message Splitter is a Python tool that splits HTML messages into fragments while keeping their structure.
-It tackles the issue of sending messages that exceed the maximum length by guaranteeing that each fragment retains the correct tag structure and HTML validity.
+The HTML Message Splitter is a Python tool designed to break down long HTML messages into smaller fragments while maintaining their structure. It ensures that each fragment retains the correct tag structure and remains valid HTML.This README provides clear instructions on how to install and use the HTML Message Splitter tool.
 
 ## Functionality
 
-The split_html_message function in the script operates as follows:
+The `split_html_message` function in the script works as follows:
 
-- Splits HTML content into fragments based on a specified maximum length.
-- Preserves HTML structure, ensuring that fragments remain valid HTML.
-- Handles nested tags correctly, closing and reopening them as needed.
-- Supports a variety of HTML elements, including paragraphs, lists, and inline styles.
+- **Split HTML Content**: It splits HTML content into smaller fragments based on a specified maximum length.
+- **Preserve Structure**: It preserves the structure of HTML, ensuring that fragments remain valid.
+- **Handle Nested Tags**: It correctly manages nested tags, closing and reopening them as necessary.
+- **Support Various HTML Elements**: It supports a variety of HTML elements, including paragraphs, lists, and inline styles.
 
 ## Installation
 
 To use the HTML Message Splitter, follow these steps:
 
-1. Ensure you have Python installed on your system.
-2. Install the BeautifulSoup library using pip:
-   
+1. **Install Python**: Make sure you have Python installed on your computer. You can download it from [Python's official website](https://www.python.org/downloads/).
+
+2. **Install BeautifulSoup Library**: Open your command line interface (CLI) and run the following command to install the BeautifulSoup library:
    pip install beautifulsoup4
    
-3.Download the split.py script from this repository.
+4. **Download the Script**: Download the `split.py` script from this repository. 
 
 ## Usage
 
-1. Place the HTML content you want to split inside the source_html variable in the script.
-2. Define the maximum length (max_len) for each fragment:
-3. Execute the script
+1. **Define Maximum Length**: Set the maximum length (in characters) for each fragment by modifying the `max_len` variable in the script.
+
+2. **Set HTML Content**: Open the `split.py` script in a text editor and locate the `input_file_path` variable. Replace the content within the variable with the directory of the txt file that contains the html content you wish to split.
+
+3. **Run the Script**:
+   - Open Command Prompt (cmd) on your Windows system.
+   - Navigate to the directory where the `split.py` script is located. You can use the `cd` command to change directories.
+   - Once you're in the correct directory, execute the script by running the following command:
+
+     ```
+     python split.py
+     ```
+
+
+
