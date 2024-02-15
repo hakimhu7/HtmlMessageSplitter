@@ -1,9 +1,38 @@
 from bs4 import BeautifulSoup
+"""
+Import BeautifulSoup from the bs4 module.
+
+BeautifulSoup is a Python library for parsing HTML and XML documents. It provides 
+useful methods and tools for extracting data from HTML/XML files, making it 
+easier to work with web scraping and data extraction tasks.
+"""
+
 from typing import Generator
+# explanation of generator func
+"""
+Import statement for Generator from the typing module.
+
+Generator is a generic type hint used to annotate functions that yield values 
+using the yield keyword. It represents a generator function that produces a 
+sequence of values
+"""
+
 
 DEFAULT_MAX_LEN = 4396
-
 def split_html_message(html_message: str, max_len: int = DEFAULT_MAX_LEN) -> Generator[str, None, None]:
+    """
+    Split an HTML message into fragments with a maximum length.
+
+    Args:
+        html_message (str): The HTML message to split.
+        max_len (int, optional): The maximum length of each fragment. Defaults to DEFAULT_MAX_LEN.
+
+    Yields:
+        str: Fragments of the HTML message.
+
+    Returns:
+        Generator[str, None, None]: A generator that yields fragments of the HTML message.
+    """
     soup = BeautifulSoup(html_message, 'html.parser')
     current_fragment = ''
     current_len = 0
@@ -70,6 +99,21 @@ def split_html_message(html_message: str, max_len: int = DEFAULT_MAX_LEN) -> Gen
     yield from append_fragment(current_fragment)
 
 def main():
+
+    """
+    Read HTML content from a file, split it into fragments, and print each fragment.
+
+    Reads HTML content from a file specified by 'input_file_path'. 
+    Splits the HTML content into fragments using the 'split_html_message' function.
+    Prints each fragment along with its length.
+
+    Raises:
+        FileNotFoundError: If the specified input file is not found.
+
+    Returns:
+        None
+    """
+
     input_file_path = r"C:\Users\User\Downloads\source.txt"  # Path to the HTML file
 
     try:
